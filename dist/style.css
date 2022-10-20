@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body.noscroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90vw;
+  max-width: 73.125rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+@media (min-width: 40em) {
+  .container {
+    padding: 1.75rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+@media (max-width: 63.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+.navbar {
+  position: relative;
+  background: white;
+  color: #102a42;
+}
+.navbar.navbar__hero {
+  background: transparent;
+  color: white;
+}
+.navbar .overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.navbar__toggle {
+  background: #fe7fca;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+}
+.navbar__toggle > span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 3px 1px;
+}
+.navbar__toggle > span:not(:last-child) {
+  margin-bottom: 4px;
+}
+.navbar__menu {
+  position: absolute;
+  width: calc(100% - 3rem);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  margin-top: 1.5rem;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+.navbar__menu .close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.75rem;
+  color: #617d98;
+}
+.navbar__menu a {
+  display: block;
+  padding: 1rem;
+  color: #102a42;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.navbar__links > a {
+  color: inherit;
+  font-size: 1.25rem;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1rem;
+}
+.navbar__links > a:hover {
+  color: #fe7fca;
+}
+.navbar__links > a:not(:last-child) {
+  margin-right: 3rem;
+}
+@media (min-width: 40em) {
+  .navbar__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.navbar__cart {
+  position: relative;
+  margin-top: 0.75rem;
+}
+.navbar__cart .toggle__cart {
+  border: 0;
+  outline: 0;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.6rem;
+  background: transparent;
+}
+.navbar__cart__count {
+  position: absolute;
+  top: -0.85rem;
+  right: -0.85rem;
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #fe7fca;
+}/*# sourceMappingURL=style.css.map */
