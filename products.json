@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Sofa Set",
+    "company": "liddy",
+    "image": "./assets/sofa-set.jpg",
+    "price": 69.98
+  },
+  {
+    "id": 2,
+    "title": "Modern Cabinet",
+    "company": "ikea",
+    "image": "./assets/cabinet.jpg",
+    "price": 25.99
+  },
+  {
+    "id": 3,
+    "title": "Dining Table",
+    "company": "liddy",
+    "image": "./assets/dining-table.jpg",
+    "price": 8.99
+  },
+  {
+    "id": 4,
+    "title": "Modern Bookshelf",
+    "company": "marcos",
+    "image": "./assets/bookshelf.jpg",
+    "price": 16.95
+  },
+  {
+    "id": 5,
+    "title": "Leather Sofa",
+    "company": "caressa",
+    "image": "./assets/leather-sofa.jpg",
+    "price": 6.99
+  },
+  {
+    "id": 6,
+    "title": "King Size Bed",
+    "company": "marcos",
+    "image": "./assets/king-size-bed.jpg",
+    "price": 99.89
+  },
+  {
+    "id": 7,
+    "title": "Sectional Sofa",
+    "company": "ikea",
+    "image": "./assets/sectional-sofa.jpg",
+    "price": 52.49
+  },
+  {
+    "id": 8,
+    "title": "Wooden Table",
+    "company": "marcos",
+    "image": "./assets/wooden-table.jpg",
+    "price": 76.29
+  },
+  {
+    "id": 9,
+    "title": "Entertainment Center",
+    "company": "liddy",
+    "image": "./assets/entertainment-center.jpg",
+    "price": 56.89
+  },
+  {
+    "id": 10,
+    "title": "Albany Wordrobe",
+    "company": "caressa",
+    "image": "./assets/wordrobe.jpg",
+    "price": 85.98
+  },
+  {
+    "id": 11,
+    "title": "Accent Couch",
+    "company": "liddy",
+    "image": "./assets/couch.jpg",
+    "price": 37.99
+  },
+  {
+    "id": 12,
+    "title": "Accent Pillow",
+    "company": "caressa",
+    "image": "./assets/pillow.jpg",
+    "price": 47.99
+  }
+]
