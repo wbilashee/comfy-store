@@ -1,0 +1,15 @@
+.about {
+  margin: 4rem auto;
+
+  @include breakpoint-up(medium) {
+    margin: 5rem auto;
+  }
+
+  &__content {
+    width: 90vw;
+    color: $gray;
+    line-height: 2;
+    max-width: 45em;
+    margin: 2rem auto;
+  }
+}

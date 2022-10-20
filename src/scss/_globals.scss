@@ -41,6 +41,26 @@ button {
   font-family: inherit;
 }
 
+.page-title {
+  color: $gray;
+  padding: 2rem 0;
+  background: $lightGray;
+
+  @include breakpoint-up(medium) {
+    padding: 1rem 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+
+    @include breakpoint-up(medium) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
 .section-title {
   span {
     font-size: 0.9em;

@@ -79,6 +79,27 @@ button {
   font-family: inherit;
 }
 
+.page-title {
+  color: #617d98;
+  padding: 2rem 0;
+  background: #f1f5f8;
+}
+@media (min-width: 40em) {
+  .page-title {
+    padding: 1rem 0;
+  }
+}
+.page-title h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+}
+@media (min-width: 40em) {
+  .page-title h3 {
+    font-size: 1.75rem;
+  }
+}
+
 .section-title span {
   font-size: 0.9em;
   color: #A2E62E;
@@ -398,4 +419,20 @@ button {
 .products-container .product-info .price {
   color: #324d67;
   margin-top: 0.25rem;
+}
+
+.about {
+  margin: 4rem auto;
+}
+@media (min-width: 40em) {
+  .about {
+    margin: 5rem auto;
+  }
+}
+.about__content {
+  width: 90vw;
+  color: #617d98;
+  line-height: 2;
+  max-width: 45em;
+  margin: 2rem auto;
 }/*# sourceMappingURL=style.css.map */
