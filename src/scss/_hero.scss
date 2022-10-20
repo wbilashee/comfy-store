@@ -1,0 +1,55 @@
+.hero {
+  height: 100vh;
+  display: grid;
+  color: white;
+  margin-top: -6rem;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero-bg.jpg") center/cover;
+
+  h1 {
+    font-family: $kaushan;
+    font-size: 3rem;
+    letter-spacing: 2px;
+
+    @include breakpoint-up(large) {
+      font-size: 5.25rem;
+      letter-spacing: 5px;
+    }
+  }
+
+  h2 {
+    margin: 0.5rem 0;
+    font-weight: 400;
+    font-size: 1.625rem;
+    letter-spacing: 0.75px;
+
+    @include breakpoint-up(large) {
+      margin: 0;
+      font-size: 2.75rem;
+      letter-spacing: $letterSpacing;
+    }
+  }
+
+  .show-btn {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1.25rem;
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    transition: $transition;
+    letter-spacing: $letterSpacing;
+
+    @include breakpoint-up(large) {
+      margin-top: 2rem;
+    }
+
+    &:hover {
+      color: $lightGreen;
+      background: white;
+    }
+  }
+}

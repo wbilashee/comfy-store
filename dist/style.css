@@ -53,7 +53,13 @@ html {
 }
 
 body {
+  font-size: 0.875rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@media (min-width: 40em) {
+  body {
+    font-size: 1rem;
+  }
 }
 body.noscroll {
   overflow: hidden;
@@ -65,6 +71,11 @@ a {
 
 li {
   list-style: none;
+}
+
+button {
+  outline: 0;
+  font-family: inherit;
 }
 
 .container {
@@ -108,6 +119,7 @@ li {
   position: relative;
   background: white;
   color: #102a42;
+  height: 6rem;
 }
 .navbar.navbar__hero {
   background: transparent;
@@ -123,7 +135,7 @@ li {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .navbar__toggle {
-  background: #fe7fca;
+  background: #A2E62E;
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
 }
@@ -154,7 +166,6 @@ li {
   top: 1rem;
   right: 1.5rem;
   border: 0;
-  outline: 0;
   cursor: pointer;
   background: transparent;
   font-size: 1.75rem;
@@ -174,7 +185,7 @@ li {
   letter-spacing: 0.1rem;
 }
 .navbar__links > a:hover {
-  color: #fe7fca;
+  color: #A2E62E;
 }
 .navbar__links > a:not(:last-child) {
   margin-right: 3rem;
@@ -193,7 +204,6 @@ li {
 }
 .navbar__cart .toggle__cart {
   border: 0;
-  outline: 0;
   color: inherit;
   cursor: pointer;
   font-size: 1.6rem;
@@ -211,5 +221,59 @@ li {
   color: white;
   font-size: 1rem;
   font-weight: bold;
-  background: #fe7fca;
+  background: #A2E62E;
+}
+
+.hero {
+  height: 100vh;
+  display: grid;
+  color: white;
+  margin-top: -6rem;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/hero-bg.jpg") center/cover;
+}
+.hero h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+@media (min-width: 64em) {
+  .hero h1 {
+    font-size: 5.25rem;
+    letter-spacing: 5px;
+  }
+}
+.hero h2 {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  font-size: 1.625rem;
+  letter-spacing: 0.75px;
+}
+@media (min-width: 64em) {
+  .hero h2 {
+    margin: 0;
+    font-size: 2.75rem;
+    letter-spacing: 0.1rem;
+  }
+}
+.hero .show-btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  margin-top: 1.25rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.1rem;
+}
+@media (min-width: 64em) {
+  .hero .show-btn {
+    margin-top: 2rem;
+  }
+}
+.hero .show-btn:hover {
+  color: #A2E62E;
+  background: white;
 }/*# sourceMappingURL=style.css.map */
