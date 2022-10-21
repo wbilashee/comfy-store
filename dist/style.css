@@ -102,7 +102,7 @@ button {
 
 .section-title span {
   font-size: 0.9em;
-  color: #A2E62E;
+  color: #a2e62e;
   margin-right: 1rem;
 }
 .section-title h2 {
@@ -144,17 +144,18 @@ button {
   border: 0;
   outline: 0;
   color: white;
+  cursor: pointer;
   border-radius: 5px;
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  background: #A2E62E;
+  background: #a2e62e;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 .button:hover {
   color: #102a42;
-  background: #D1F19E;
+  background: #d1f19e;
 }
 
 .flex {
@@ -202,7 +203,7 @@ button {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 .navbar__toggle {
-  background: #A2E62E;
+  background: #a2e62e;
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
 }
@@ -252,7 +253,7 @@ button {
   letter-spacing: 0.1rem;
 }
 .navbar__links > a:hover {
-  color: #A2E62E;
+  color: #a2e62e;
 }
 .navbar__links > a:not(:last-child) {
   margin-right: 3rem;
@@ -288,7 +289,7 @@ button {
   color: white;
   font-size: 1rem;
   font-weight: bold;
-  background: #A2E62E;
+  background: #a2e62e;
 }
 
 .hero {
@@ -341,7 +342,7 @@ button {
   }
 }
 .hero .show-btn:hover {
-  color: #A2E62E;
+  color: #a2e62e;
   background: white;
 }
 
@@ -424,11 +425,11 @@ button {
   place-items: center;
   border-radius: 50%;
   cursor: pointer;
-  background: #A2E62E;
+  background: #a2e62e;
   transition: all 0.3s ease-in-out;
 }
 .products-container .product-img .product-icons .product-icon:hover {
-  background: #D1F19E;
+  background: #d1f19e;
 }
 .products-container .product-img .product-icons .product-icon:not(:last-child) {
   margin-right: 1rem;
@@ -525,4 +526,46 @@ button {
   line-height: 2;
   max-width: 45em;
   margin: 2rem auto;
+}
+
+.single-product {
+  margin: 2rem auto;
+}
+.single-product .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+@media (min-width: 64em) {
+  .single-product .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.single-product-img {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.single-product-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+.single-product-company {
+  margin: 0.75rem 0;
+  font-size: 1.25rem;
+  color: #bcccdc;
+  font-family: "Kaushan Script", cursive;
+  text-transform: uppercase;
+}
+.single-product-price {
+  color: #102a42;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+.single-product-desc {
+  width: 80%;
+  color: #617d98;
+  line-height: 1.75;
+  margin: 1.5rem 0 2rem;
 }/*# sourceMappingURL=style.css.map */

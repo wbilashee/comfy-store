@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <title>Product | Comfy</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="overlay has-fade"></div>
+      <div class="container flex flex-jc-sb flex-ai-c">
+        <a id="btn-hamburger" href="#" class="navbar__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="navbar__links hide-for-mobile">
+          <a href="./index.html">Home</a><a href="./products.html">Products</a
+          ><a href="./about.html">About</a>
+        </div>
+        <div class="navbar__logo">
+          <img src="./assets/logo-black.svg" alt="logo" />
+        </div>
+        <div class="navbar__cart">
+          <button class="toggle__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span class="navbar__cart__count">1</span>
+        </div>
+        <div class="navbar__menu has-fade">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <a href="./index.html">Home</a>
+          <a href="./products.html">Products</a>
+          <a href="./about.html">About</a>
+        </div>
+      </div>
+    </nav>
+    <div class="page-title">
+      <div class="container">
+        <h3>Home / <span class="title"></span></h3>
+      </div>
+    </div>
+    <section class="single-product">
+      <div class="container">
+        <img src="" class="single-product-img" alt="image" />
+        <article class="single-product-info">
+          <div>
+            <h2 class="single-product-title"></h2>
+            <p class="single-product-company"></p>
+            <p class="single-product-price"></p>
+            <p class="single-product-desc">
+              Cloud bread VHS hell of banjo bicycle rights jianbing umami
+              mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr
+              dreamcatcher waistcoat, authentic chillwave trust fund. Viral
+              typewriter fingerstache pinterest pork belly narwhal. Schlitz
+              venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki
+              trust fund hashtag kinfolk microdosing gochujang live-edge
+            </p>
+            <button class="button" data-id="id">add to cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="page-loading">
+      <img src="./assets/loading.gif" alt="loading" />
+    </div>
+    <script type="module" src="./src/js/pages/product.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7cb730151f.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
