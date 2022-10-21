@@ -3,8 +3,8 @@ let store = getStorageItem("store");
 
 const setupStore = (products) => {
     store = products.map(product => {
-        const { id, image, title, price, featured } = product;
-        return { id, image, title, price, featured };
+        const { id, image, title, price, company, featured } = product;
+        return { id, image, title, price, company, featured };
     });
     setStorageItem("store", store);
 }

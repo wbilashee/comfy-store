@@ -52,7 +52,7 @@
             <input
               type="text"
               name="search"
-              id="product"
+              autocomplete="off"
               class="search-input"
               placeholder="Search..."
             />
@@ -61,24 +61,17 @@
           <div class="companies"></div>
           <h4>Price</h4>
           <form class="price-form">
-            <input
-              type="range"
-              name="price"
-              id="price"
-              min="0"
-              value="50"
-              max="100"
-            />
+            <input type="range" name="price" class="price-filter" />
           </form>
-          <p class="price-value">Value : $80</p>
+          <p class="price-value"></p>
         </div>
       </div>
       <div id="products" class="products-container"></div>
     </section>
-    <!-- <div class="page-loading">
-      <h2>Loading...</h2>
-    </div> -->
-    <script type="module" src="./src/js/products.js"></script>
+    <div class="page-loading">
+      <img src="./assets/loading.gif" alt="loading" />
+    </div>
+    <script type="module" src="./src/js/pages/products.js"></script>
     <script
       src="https://kit.fontawesome.com/7cb730151f.js"
       crossorigin="anonymous"

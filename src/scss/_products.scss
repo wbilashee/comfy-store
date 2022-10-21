@@ -2,9 +2,23 @@
   display: grid;
   grid-gap: 1.15rem;
   position: relative;
-  grid-template-columns: 200px 1fr;
+  margin: 3rem auto;
+  grid-template-columns: 1fr;
+
+  @include breakpoint-up(medium) {
+    margin: 2rem auto;
+    grid-template-columns: 200px 1fr;
+  }
 
   .filters {
+    width: 50vw;
+    margin: 0 auto 2rem;
+
+    @include breakpoint-up(medium) {
+      margin: 0;
+      width: auto;
+    }
+
     &-container {
       position: sticky;
       top: 1rem;
@@ -39,5 +53,17 @@
       background: transparent;
       text-transform: capitalize;
     }
+  }
+
+  .filter-error {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    margin-top: 5rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: $letterSpacing;
   }
 }
