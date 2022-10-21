@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./dist/style.css" />
-    <title>Comfy Store</title>
+    <title>Products | Comfy</title>
   </head>
   <body>
-    <nav class="navbar navbar__hero">
+    <nav class="navbar">
       <div class="overlay has-fade"></div>
       <div class="container flex flex-jc-sb flex-ai-c">
         <a id="btn-hamburger" href="#" class="navbar__toggle hide-for-desktop">
@@ -22,7 +22,7 @@
           ><a href="./about.html">About</a>
         </div>
         <div class="navbar__logo">
-          <img src="./assets/logo-white.svg" alt="logo" />
+          <img src="./assets/logo-black.svg" alt="logo" />
         </div>
         <div class="navbar__cart">
           <button class="toggle__cart">
@@ -40,21 +40,45 @@
         </div>
       </div>
     </nav>
-    <section class="hero">
+    <div class="page-title">
       <div class="container">
-        <h1>Rest, Relax, Unwind</h1>
-        <h2>Embrace your choices - we do</h2>
-        <a href="./products.html" class="show-btn">Show now</a>
+        <h3>Home / Products</h3>
       </div>
-    </section>
-    <section class="featured">
-      <div class="section-title flex flex-ai-c flex-jc-c">
-        <h2><span>/</span>Featured</h2>
+    </div>
+    <section class="products container">
+      <div class="filters">
+        <div class="filters-container">
+          <form class="input-form">
+            <input
+              type="text"
+              name="search"
+              id="product"
+              class="search-input"
+              placeholder="Search..."
+            />
+          </form>
+          <h4>Company</h4>
+          <div class="companies"></div>
+          <h4>Price</h4>
+          <form class="price-form">
+            <input
+              type="range"
+              name="price"
+              id="price"
+              min="0"
+              value="50"
+              max="100"
+            />
+          </form>
+          <p class="price-value">Value : $80</p>
+        </div>
       </div>
-      <div class="container products-container featured-products"></div>
-      <a href="./products.html" class="button">All Products</a>
+      <div id="products" class="products-container"></div>
     </section>
-    <script type="module" src="./app.js"></script>
+    <!-- <div class="page-loading">
+      <h2>Loading...</h2>
+    </div> -->
+    <script type="module" src="./src/js/products.js"></script>
     <script
       src="https://kit.fontawesome.com/7cb730151f.js"
       crossorigin="anonymous"

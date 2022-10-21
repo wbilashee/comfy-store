@@ -1,6 +1,8 @@
 const body = document.body;
 const navbar = document.querySelector(".navbar");
 const fadeElems = document.querySelectorAll(".has-fade");
+const closeBtn = document.querySelector(".close-btn");
+const btnHamburger = document.querySelector("#btn-hamburger");
 
 const toggleNavbar = () => {
     if (navbar.classList.contains("open")) {
@@ -20,4 +22,5 @@ const toggleNavbar = () => {
     }
 }
 
-export default toggleNavbar;
+btnHamburger.addEventListener("click", toggleNavbar);
+closeBtn.addEventListener("click", toggleNavbar);

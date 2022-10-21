@@ -11,7 +11,8 @@
     "title": "Modern Cabinet",
     "company": "ikea",
     "image": "./assets/cabinet.jpg",
-    "price": 25.99
+    "price": 25.99,
+    "featured": true
   },
   {
     "id": 3,
@@ -25,7 +26,8 @@
     "title": "Modern Bookshelf",
     "company": "marcos",
     "image": "./assets/bookshelf.jpg",
-    "price": 16.95
+    "price": 16.95,
+    "featured": true
   },
   {
     "id": 5,
@@ -60,7 +62,8 @@
     "title": "Entertainment Center",
     "company": "liddy",
     "image": "./assets/entertainment-center.jpg",
-    "price": 56.89
+    "price": 56.89,
+    "featured": true
   },
   {
     "id": 10,

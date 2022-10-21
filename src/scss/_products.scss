@@ -1,0 +1,44 @@
+.products {
+  display: grid;
+  grid-gap: 1.15rem;
+  position: relative;
+  grid-template-columns: 200px 1fr;
+
+  .filters {
+    &-container {
+      position: sticky;
+      top: 1rem;
+    }
+
+    .search-input {
+      border: 0;
+      outline: 0;
+      width: 100%;
+      font-weight: 400;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      border-radius: 0.5rem;
+      background: $lightGray;
+      padding: 0.45rem 0.625rem;
+    }
+
+    h4 {
+      font-weight: 500;
+      margin: 0.9375rem 0;
+      font-size: 0.9375rem;
+    }
+
+    .company-btn {
+      border: 0;
+      color: $gray;
+      display: block;
+      cursor: pointer;
+      margin: 0.625rem;
+      font-weight: 500;
+      padding: 0.15rem 0;
+      font-size: 0.9375rem;
+      background: transparent;
+      text-transform: capitalize;
+    }
+  }
+}
