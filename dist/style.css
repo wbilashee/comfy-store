@@ -344,12 +344,25 @@ button {
   }
 }
 .featured .container {
+  min-height: 20rem;
+  position: relative;
   margin: 2rem auto 1rem;
 }
 @media (min-width: 40em) {
   .featured .container {
     margin: 1rem auto 0;
   }
+}
+.featured-loading {
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  display: grid;
+  place-items: center;
+}
+.featured-loading img {
+  width: 5rem;
 }
 
 .products-container {
@@ -452,10 +465,9 @@ button {
   color: #617d98;
   display: block;
   cursor: pointer;
-  margin: 0.625rem;
-  font-weight: 500;
+  margin: 0.65rem;
+  font-size: 0.9rem;
   padding: 0.15rem 0;
-  font-size: 0.9375rem;
   background: transparent;
   text-transform: capitalize;
 }

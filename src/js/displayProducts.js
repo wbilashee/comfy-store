@@ -1,5 +1,7 @@
-const displayProducts = (products, container) => {
-    let result = products.map((product) => {
+import { formatPrice } from "./utils.js";
+
+const displayProducts = (products, element, filters) => {
+    element.innerHTML = products.map(product => {
         const { id, image, title, price } = product;
 
         return `<div class="product">
@@ -16,12 +18,12 @@ const displayProducts = (products, container) => {
         </div>
         <div class="product-info">
         <p class="name">${title}</p>
-        <h4 class="price">$${price}</h4>
+        <h4 class="price">${formatPrice(price)}</h4>
         </div>
-        </div>`;
+        </div>`
     }).join("");
 
-    container.innerHTML = result;
+    if (filters) return;
 }
 
 export default displayProducts;
