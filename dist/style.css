@@ -292,6 +292,99 @@ button {
   background: #a2e62e;
 }
 
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 25rem;
+  overflow-y: scroll;
+  background: #f1f5f8;
+  padding: 3rem 1rem 0 1.5rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+.cart-overlay {
+  opacity: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.cart-overlay.open .cart {
+  transform: translateX(0);
+}
+.cart-close, .cart-item-remove, .cart-item-increase, .cart-item-decrease {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+.cart-close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 1.75rem;
+  color: #617d98;
+}
+.cart header h3, .cart-total {
+  font-weight: 400;
+  font-size: 1.75rem;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 0.75rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+.cart-item {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+.cart-item-img {
+  width: 75px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.cart-item-title {
+  font-weight: 400;
+  margin-bottom: 0.15rem;
+}
+.cart-item-price {
+  color: #324d67;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+}
+.cart-item-remove {
+  color: #617d98;
+  letter-spacing: 0.1rem;
+}
+.cart-item-increase, .cart-item-decrease {
+  padding: 0.25rem;
+  font-size: 0.85rem;
+  color: #a2e62e;
+}
+.cart-item-amount {
+  text-align: center;
+}
+.cart-total {
+  margin-bottom: 2rem;
+}
+.cart-checkout {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
 .hero {
   height: 100vh;
   display: grid;
