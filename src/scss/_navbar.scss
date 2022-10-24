@@ -4,7 +4,7 @@
   color: $darkGray;
   height: 6rem;
 
-  &.navbar__hero {
+  &.navbar-hero {
     background: transparent;
     color: white;
   }
@@ -19,7 +19,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
 
-  &__toggle {
+  &-toggle {
     background: $lightGreen;
     padding: 0.6rem 1.2rem;
     border-radius: 20px;
@@ -38,7 +38,7 @@
     }
   }
 
-  &__menu {
+  &-menu {
     position: absolute;
     width: calc(100% - 3rem);
     top: 0;
@@ -69,7 +69,7 @@
     }
   }
 
-  &__links {
+  &-links {
     > a {
       color: inherit;
       font-size: 1.25rem;
@@ -86,7 +86,7 @@
     }
   }
 
-  &__logo {
+  &-logo {
     @include breakpoint-up(medium) {
       position: absolute;
       top: 50%;
@@ -95,11 +95,11 @@
     }
   }
 
-  &__cart {
+  &-cart {
     position: relative;
     margin-top: 0.75rem;
 
-    .toggle__cart {
+    .cart-toggle {
       border: 0;
       color: inherit;
       cursor: pointer;
@@ -107,7 +107,7 @@
       background: transparent;
     }
 
-    &__count {
+    &-count {
       position: absolute;
       top: -0.85rem;
       right: -0.85rem;

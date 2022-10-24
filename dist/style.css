@@ -189,7 +189,7 @@ button {
   color: #102a42;
   height: 6rem;
 }
-.navbar.navbar__hero {
+.navbar.navbar-hero {
   background: transparent;
   color: white;
 }
@@ -202,12 +202,12 @@ button {
   bottom: 0px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-.navbar__toggle {
+.navbar-toggle {
   background: #a2e62e;
   padding: 0.6rem 1.2rem;
   border-radius: 20px;
 }
-.navbar__toggle > span {
+.navbar-toggle > span {
   display: block;
   width: 22px;
   height: 3px;
@@ -215,10 +215,10 @@ button {
   transition: all 0.3s ease-in-out;
   transform-origin: 3px 1px;
 }
-.navbar__toggle > span:not(:last-child) {
+.navbar-toggle > span:not(:last-child) {
   margin-bottom: 4px;
 }
-.navbar__menu {
+.navbar-menu {
   position: absolute;
   width: calc(100% - 3rem);
   top: 0;
@@ -229,7 +229,7 @@ button {
   padding: 1.625rem;
   border-radius: 5px;
 }
-.navbar__menu .close-btn {
+.navbar-menu .close-btn {
   position: absolute;
   top: 1rem;
   right: 1.5rem;
@@ -239,45 +239,45 @@ button {
   font-size: 1.75rem;
   color: #617d98;
 }
-.navbar__menu a {
+.navbar-menu a {
   display: block;
   padding: 1rem;
   color: #102a42;
   font-size: 1.25rem;
   text-align: center;
 }
-.navbar__links > a {
+.navbar-links > a {
   color: inherit;
   font-size: 1.25rem;
   transition: all 0.3s ease-in-out;
   letter-spacing: 0.1rem;
 }
-.navbar__links > a:hover {
+.navbar-links > a:hover {
   color: #a2e62e;
 }
-.navbar__links > a:not(:last-child) {
+.navbar-links > a:not(:last-child) {
   margin-right: 3rem;
 }
 @media (min-width: 40em) {
-  .navbar__logo {
+  .navbar-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
-.navbar__cart {
+.navbar-cart {
   position: relative;
   margin-top: 0.75rem;
 }
-.navbar__cart .toggle__cart {
+.navbar-cart .cart-toggle {
   border: 0;
   color: inherit;
   cursor: pointer;
   font-size: 1.6rem;
   background: transparent;
 }
-.navbar__cart__count {
+.navbar-cart-count {
   position: absolute;
   top: -0.85rem;
   right: -0.85rem;
@@ -613,7 +613,7 @@ button {
     margin: 5rem auto;
   }
 }
-.about__content {
+.about-content {
   width: 90vw;
   color: #617d98;
   line-height: 2;
