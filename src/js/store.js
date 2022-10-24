@@ -10,7 +10,7 @@ const setupStore = (products) => {
 }
 
 const findProduct = (id) => {
-    let product = store.find(product => product.id === id);
+    let product = store.find(product => product.id == id);
     return product;
 }
 

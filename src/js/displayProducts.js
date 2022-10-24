@@ -1,4 +1,5 @@
 import { formatPrice } from "./utils.js";
+import { addToCart } from "./cart/setupCart.js";
 
 const displayProducts = (products, element, filters) => {
     element.innerHTML = products.map(product => {
@@ -11,7 +12,7 @@ const displayProducts = (products, element, filters) => {
             <a href="./product.html?id=${id}" class="product-icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             </a>
-            <button class="product-cart-btn product-icon">
+            <button class="product-cart-btn product-icon" data-id="${id}">
             <i class="fas fa-cart-shopping"></i>
             </button>
         </div>
@@ -24,6 +25,13 @@ const displayProducts = (products, element, filters) => {
     }).join("");
 
     if (filters) return;
+
+    element.addEventListener("click", (e) => {
+        const parent = e.target.parentElement;
+        if (parent.classList.contains("product-cart-btn")) {
+            addToCart(parent.dataset.id);
+        }
+    });
 }
 
 export default displayProducts;
