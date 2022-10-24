@@ -1,4 +1,5 @@
-import "../navbarToggle.js";
+import "../toggleNavber.js";
+import "../cart/toggleCart.js";
 import { getElement } from "../utils.js";
 import { findProduct } from "../store.js";
 

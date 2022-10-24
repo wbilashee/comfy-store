@@ -1,4 +1,5 @@
-import "../navbarToggle.js";
+import "../toggleNavber.js";
+import "../cart/toggleCart.js";
 import setupCompanies from "../filters/companies.js";
 import setupSearch from "../filters/search.js";
 import setupPrice from "../filters/price.js";

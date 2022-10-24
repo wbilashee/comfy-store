@@ -1,1 +1,2 @@
-import "../navbarToggle.js";
+import "../toggleNavber.js";
+import "../cart/toggleCart.js";
